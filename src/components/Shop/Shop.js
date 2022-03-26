@@ -31,8 +31,10 @@ const Shop = () => {
             <div className="cart-container">
                 <h4>Order Summary</h4>
                 <p>Selected Items: {cart.name}</p>
-                <button>CHOOSE 1 FOR ME</button>
-                <button></button>
+                <div >
+                    <button>CHOOSE 1 FOR ME</button>
+                    <button className='choose-button'>CHOOSE AGAIN</button>
+                </div>
             </div>
 
         </div>
