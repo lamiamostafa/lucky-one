@@ -5,7 +5,7 @@ import './Shop.css';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
-    const [carts, setCart] = useState([]);
+    const [cart, setCart] = useState([]);
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
@@ -13,10 +13,15 @@ const Shop = () => {
     }, []);
     const handleAddToCart = (product) => {
         console.log(product);
-        const newCart = [...carts, product];
+        const newCart = [...cart, product];
         setCart(newCart);
 
     }
+    // const removeAll = () => {
+
+    //     setCart([]);
+
+    // }
     // const chooseAgainToCart = (product) => {
     //     console.log(product);
     //     const newCart = [...carts, product];
@@ -36,20 +41,29 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                {/* {
-                    carts.map(cart => <Cart
-                        chooseAgainToCart={chooseAgainToCart}
-                        cart={cart}></Cart>)
-                } */}
+                <h4 className='cart-desc'>Order Summary</h4>
+
+                {
+                    cart.map(item => <Cart
+                        key={item.id}
+                        name={item.name}>
+
+                    </Cart>)
+
+                }
+
+                <div >
+
+                    <button className='cart-desc'>CHOOSE 1 FOR ME</button>
+                    <button className='choose-button'>CHOOSE AGAIN</button>
+                </div>
+                {/* <Cart></Cart> */}
 
 
-                <Cart cart={carts}
-                    selectname={products.name}
-                ></Cart>
 
             </div>
 
-        </div>
+        </div >
     );
 };
 

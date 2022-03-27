@@ -1,10 +1,6 @@
-.cart-div{
-    margin-left:10px;
-    position:sticky;
+.cart-div{   
     top:0;
-    padding:30px 20px;
-}
-.choose-button{
-    margin-top:7px;
-
+    /* padding:30px 20px; */
+    margin-left:10px;
+    /* position:sticky; */
 }
