@@ -1,3 +1,14 @@
+# Assignment-8
+This project is made on the concept of the basics react.
+
+## [Private Repo Link](https://github.com/Programming-Hero-Web-Course4/lucky-one-lamiamostafa)
+This is the link of my Private Repo.
+
+## [Live Site Link](https://github.com/Programming-Hero-Web-Course4/lucky-one-lamiamostafa)
+This is the link of my Live site.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

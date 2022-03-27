@@ -48,13 +48,10 @@ const Shop = () => {
                 {
                     cart.map(item => <Cart
                         key={item.id}
-                        name={item.name}>
-
+                        name={item.name} >
                     </Cart>)
 
-
                 }
-
 
                 <div >
 

@@ -6,7 +6,10 @@ const Cart = ({ name }) => {
 
     return (
         <div className='cart-div'>
-            <p>{name}</p>
+
+            <p>{name} </p>
+
+
         </div>
     );
 };
