@@ -43,7 +43,7 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <h4 className='cart-desc'>Order Summary</h4>
+                <h4 className='cart-desc'>Selected Order </h4>
 
                 {
                     cart.map(item => <Cart

@@ -1,7 +1,7 @@
 .shop-container{
     display:grid;
     grid-template-columns: 4fr 1fr;
-    /* position:relative; */
+  
 }
 .products-container{
     display:grid;
@@ -13,12 +13,11 @@
 .cart-container{
     background-color: bisque;  
     position:sticky;
-    height:944px;
+    height:500px;
     top: 0;
     padding:30px 20px;
     font-size:16px;
-  
- 
+    border-radius: 20px;
     
 }
 
