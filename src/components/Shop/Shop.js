@@ -17,18 +17,17 @@ const Shop = () => {
         setCart(newCart);
 
     }
-    // const removeAll = () => {
 
-    //     setCart([]);
-
-    // }
     const chooseForMe = () => {
         if (cart.length > 0) {
             const randomChoose = [Math.floor(Math.random() * cart.length)];
             setCart([cart[randomChoose]]);
 
         }
+    }
+    const chooseAgain = () => {
 
+        setCart([]);
 
     }
     return (
@@ -60,7 +59,7 @@ const Shop = () => {
                 <div >
 
                     <button onClick={chooseForMe} className='cart-desc'>CHOOSE 1 FOR ME</button>
-                    <button className='choose-button'>CHOOSE AGAIN</button>
+                    <button onClick={chooseAgain} className='choose-button'>CHOOSE AGAIN</button>
                 </div>
                 {/* <Cart></Cart> */}
 
